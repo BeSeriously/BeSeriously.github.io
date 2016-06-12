@@ -96,7 +96,7 @@
 
 		<div class="slogan">
       <i class="fa fa-heart"></i>
-      Yet another bootstrap theme.
+      Learning and Coding
 </div>    
 		<div id="top_search"></div>
 		<div class="mypage">
@@ -107,8 +107,8 @@
 	
 	<!-- display as entry -->	
 		<h3 class="title">
-			<div class="date"> 2016-04-22 </div>
-			<div class="article-title"><a href="/2016/04/22/hello-world/" >Hello World</a></div>						
+			<div class="date"> 2016-06-12 </div>
+			<div class="article-title"><a href="/2016/06/12/输入密码无法登陆的问题/" >无法登陆（在登陆界面输入密码后又跳转到登陆界面）</a></div>						
 		</h3>
 	
 
@@ -117,19 +117,16 @@
   <div class="row">
 	
 	
-		<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New中文显示"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+		<p>今天在登陆Ubuntu虚拟机的时候，输入密码无法登陆，反复跳转到登陆界面。在网上查询解决办法的时候,发现是用户Home目录下一个叫“.Xauthority”的文件的拥有者和组都变成了root，导致无法登陆。所以只要将这个文件的拥有者和组改成登陆用户名就行了。具体的做法如下：  </p>
+<ol>
+<li>开机后在登陆界面按下shift + ctrl + F1进入tty1命令行终端，使用自己的用户名和密码登陆。</li>
+<li>进入用户Home目录，然后修改文件拥有者和组。 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> ~ </span><br><span class="line">$ sudo chown username:groupname .Xauthority</span><br></pre></td></tr></table></figure></li>
+<li>使用shift + ctrl + F7切换到图形登陆界面，再输入密码登陆就行了。<br>具体原因请参考这篇文章<a href="http://www.2cto.com/os/201308/238991.html" target="_blank" rel="external">http://www.2cto.com/os/201308/238991.html</a></li>
+</ol>
 
 	
 	</div>
-  <a type="button" href="/2016/04/22/hello-world/#more" class="btn btn-default more">Read More</a>
+  <a type="button" href="/2016/06/12/输入密码无法登陆的问题/#more" class="btn btn-default more">Read More</a>
 </div>
 
 		
@@ -167,8 +164,29 @@
 
 		
 			
+	<div class="widget">
+		<h4>Categories</h4>
+		<ul class="tag_box inline list-unstyled">
+		
+			<li><a href="/categories/Linux/">Linux<span>1</span></a></li>
+		
+		</ul>
+	</div>
+
 		
 			
+	<div class="widget">
+		<h4>Tag Cloud</h4>
+		<ul class="tag_box inline list-unstyled">		
+		
+			<li><a href="/tags/Linux/">Linux<span>1</span></a></li>
+		
+			<li><a href="/tags/Ubuntu故障/">Ubuntu故障<span>1</span></a></li>
+		
+		 
+		</ul>
+	</div>
+
 
 		
 			
@@ -177,7 +195,7 @@
   <ul class="entry list-unstyled">
     
       <li>
-        <a href="/2016/04/22/hello-world/" ><i class="fa fa-file-o"></i>Hello World</a>
+        <a href="/2016/06/12/输入密码无法登陆的问题/" ><i class="fa fa-file-o"></i>无法登陆（在登陆界面输入密码后又跳转到登陆界面）</a>
       </li>
     
   </ul>
